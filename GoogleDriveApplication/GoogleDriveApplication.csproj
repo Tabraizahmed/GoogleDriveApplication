@@ -221,10 +221,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GoogleDriveApi2\GoogleDriveApi.csproj">
-      <Project>{b3210985-5c1d-4524-95ec-6cdb2aaa5024}</Project>
-      <Name>GoogleDriveApi</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{7a784607-6538-4c39-ae37-1d555cd77fe7}</Project>
       <Name>Models</Name>

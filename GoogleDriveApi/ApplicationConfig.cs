@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GoogleDriveApi
 {
-   public static class ApplicationConfig
+   internal static class ApplicationConfig
     {
        public static string[] Scopes = { DriveService.Scope.DriveReadonly };
        public static string ApplicationName = "Drive API .NET Quickstart";

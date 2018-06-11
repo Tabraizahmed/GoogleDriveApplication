@@ -7,10 +7,10 @@ using System.Threading;
 
 namespace GoogleDriveApi
 {
-   public class CreateApiService
+   internal class CreateApiService
     {
         CreateConnection CreateConnection = new CreateConnection();
-        internal DriveService CallAppiService()
+        public DriveService CallAppiService()
         {
            
             var service = new DriveService(new BaseClientService.Initializer()
