@@ -1,0 +1,23 @@
+﻿@model List<Models.UserFiles>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table-striped table-responsive table">
+    <thead>
+        <tr>
+            <th>File Id</th>
+            <th>File Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FileID</td>
+                <td>@item.FileName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
