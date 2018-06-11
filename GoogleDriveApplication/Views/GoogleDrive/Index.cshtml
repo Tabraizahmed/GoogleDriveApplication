@@ -8,6 +8,7 @@
         <tr>
             <th>File Id</th>
             <th>File Name</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -16,6 +17,18 @@
             <tr>
                 <td>@item.FileID</td>
                 <td>@item.FileName</td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actions
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Download</a>
+                            <a class="dropdown-item" href="#">Delete</a>
+                           
+                        </div>
+                    </div>
+                </td>
             </tr>
         }
     </tbody>
