@@ -16,7 +16,8 @@ namespace GoogleDriveApi
             var service = new DriveService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = CreateConnection.MakeCredentialsRequest(),
-                ApplicationName = ApplicationConfig.ApplicationName,
+                ApplicationName = ApplicationConfig.ApplicationName
+                
             });
 
             return service;

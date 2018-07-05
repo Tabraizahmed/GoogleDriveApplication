@@ -84,7 +84,12 @@ namespace GoogleDriveApi
                     }
             }};
         }
-
+        public void DeleteFile(string fileId)
+        {
+            CreateApiService createApiService = new CreateApiService();
+            FilesResource.DeleteRequest request= createApiService.CallAppiService().Files.Delete(fileId);
+            request.Execute();
+        }
 
     }
 }
